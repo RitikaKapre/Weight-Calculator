@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Space Weight</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- <div> -->
+    <h1> Calculate your weight now, across the universe!</h1>
+    <h2>Enter your weight below: </h2>
+
+    <div class="imggrp">
+        <div id="welcomeDiv"><p>Click on any planet to know your weight!</p></div>
+        <img class="rotate linear infinite " id="mercury" src="assets/mercury.png" onclick="getid(this.id)">
+        <img class="rotate linear infinite  " src="assets/venus.png" id="venus" onclick="getid(this.id)">
+        <img class="rotate linear infinite  " id="earth" src="assets/earth.png" onclick="getid(this.id)">
+        <img class="rotate linear infinite  " id="mars" src="assets/mars.png" onclick="getid(this.id)">
+        <img class="rotate linear infinite  " id="jupiter" src="assets/j1.png" onclick="getid(this.id)">
+        <img class="rotate linear infinite  " id="saturn" src="assets/saturn.png" onclick="getid(this.id)">
+        <img class="rotate linear infinite  " id="uranus" src="assets/ura.png" onclick="getid(this.id)">
+        <img class="rotate linear infinite  " id="neptune" src="assets/neptune.png" onclick="getid(this.id)">
+
+       </div>
+<div id="inpDiv">  <input type="number" id="vals" placeholder="ex: 60kg" />
+    <button type="button" onclick="showtext()">submit weight</button><br>
+<!-- </div> -->
+   
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="container">
+                <!-- <p>Some text in the Modal..</p> -->
+                <div class="imgg">
+                    <img class="rotate linear infinite planets" src="assets/mercury.png">
+                </div>
+                <div >
+                   
+                                        <h3 id="res">
+                                            
+                                        </h3>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="myModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="container">
+                <!-- <p>Some text in the Modal..</p> -->
+                <div class="imgg">
+                    <img class="rotate linear infinite planets" src="assets/venus.png">
+                </div>
+               
+                  
+                    <h3 id="res1">
+                                            
+                    </h3>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="container">
+                <!-- <p>Some text in the Modal..</p> -->
+                <div class="imgg">
+                    <img class="rotate linear infinite " src="assets/earth.png">
+                </div>
+                
+                  
+                    <h3 id="res2">
+                                            
+                    </h3>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="myModal3" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="container">
+                <!-- <p>Some text in the Modal..</p> -->
+                <div class="imgg">
+                    <img style="width: 500px;" class="rotate linear infinite planets" src="assets/mars.png">
+                </div>
+               
+                  
+                    <h3 id="res3">
+                                            
+                    </h3>
+            </div>
+        </div>
+
+    </div>
+    <div id="myModal4" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="container">
+                <!-- <p>Some text in the Modal..</p> -->
+                <div class="imgg">
+                    <img class="rotate linear infinite " src="assets/j1.png">
+                </div>
+               
+                  
+                    <h3 id="res4">
+                                            
+                    </h3>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="myModal5" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="container">
+                <!-- <p>Some text in the Modal..</p> -->
+                <div class="imgg">
+                    <img class="rotate linear infinite " style="width: 500px;" src="assets/saturn.png">
+                </div>
+                
+                  
+                    <h3 id="res5">
+                                            
+                    </h3>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div id="myModal6" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="container">
+                <!-- <p>Some text in the Modal..</p> -->
+                <div class="imgg">
+                    <img class="rotate linear infinite planets" src="assets/ura.png">
+                </div>
+               
+                  
+                    <h3 id="res6">
+                                            
+                    </h3>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="myModal7" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="container">
+                <!-- <p>Some text in the Modal..</p> -->
+                <div class="imgg">
+                    <img class="rotate linear infinite " src="assets/neptune.png">
+                </div>
+                
+                    
+                    <h3 id="res7">
+                                            
+                    </h3>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,219 @@
+ html {
+    height: 100%;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-family: 'Source Sans Pro', sans-serif; */
+    background-image: url("assets/backg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* color: black; */
+}
+body{
+  /* margin-left: 20%; */
+  width:100vw;
+  font-family: 'Source Sans Pro', sans-serif; 
+  height: 100vh;
+  overflow: hidden; 
+}
+/* .planets{
+    width: 90px;
+    height: 100px;
+    margin-top: 25%;
+} */
+
+
+.rotate {
+    animation: rotation 10s;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  .linear {
+    animation-timing-function: linear;
+  }
+  .infinite {
+    animation-iteration-count: infinite;
+  }
+#mercury{
+  width: 90px;
+  height: 85px;
+  margin-top: 25%;
+  margin-left: 18%;
+}
+#venus{
+  width: 85px;
+  height: 85px;
+  margin-top: 25%;
+  margin-left: 2%;
+}
+#earth{
+  width: 95px;
+  height:  95px;
+  margin-top: 25%;
+  margin-left: 2%;
+}
+#mars{
+  width: 85px;
+  height: 70px;
+  margin-top: 25%;
+  margin-left: 2%;
+}
+#jupiter{
+  width: 180px;
+  height: 100px;
+  margin-top: 25%;
+  margin-left: 2%;
+}
+#saturn{
+  width: 150px;
+  height: 90px;
+  margin-top: 25%;
+  margin-left: 1%;
+}
+#uranus{
+  width: 90px;
+  height: 90px;
+  margin-top: 25%;
+  margin-left: 2%;
+}
+#neptune{
+  height: 85px;
+  margin-top: 25%;
+  margin-left: 1%;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); 
+  /* Fallback color */
+   background-color: rgba(0,0,0,0.4);
+   /* Black w/ opacity*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  margin: 12% auto; /* 15% from the top and centered */
+  padding: 15px;
+  border: 3px solid #888;
+  /* border-radius: 5%; */
+  width: 80%; 
+  height: 60%;
+  /* opacity: 80%;Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+p{
+  color: white;
+}
+h1{
+  
+  color: white;
+  font-weight: 600;
+  margin-left: 30%;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+h2{
+  color: white;
+  margin-left: 40%;
+
+}
+h3 {
+  color: white;
+  font-size: 30px;
+
+}
+p{
+  color: white;
+  animation: color-change 4s infinite;
+  font-size: 20px;
+}
+@keyframes color-change {
+   0% { color: white; } 
+   100% { color: white; }
+  50% { color: black; } 
+  
+} 
+input{
+  /* display: block; */
+  text-align: center;
+  margin-left: 42%;
+  width: 12rem;
+  height: 3rem;
+  font-size: 15px;  
+  border-radius: 10px;
+  margin-bottom: 2px;
+  /* display: block; */
+  top: -87rem;
+    position: relative;
+}
+button{
+  display: block;
+  top: -85rem;
+  position: relative;
+  text-align: center;
+  width:11rem;
+  margin-left: 43%;
+  font-weight: bold;
+  height: 2.8rem;
+  /* color: black; */
+  border-radius: 10px;
+  /* margin-bottom: -15%; */
+  background-color:white;
+  color: black;
+}
+
+.container{
+  /* height:; */
+  /* background-color: aqua; */
+  display: flex;
+}
+.planets{
+  width: 400px;
+}
+.imgg{
+  padding: 20px;
+  width: 50%;
+
+}
+.res{
+  width:  50%;
+  padding: 20px;
+  /* background-color: rgb(147, 143, 151); */
+}
+.imggrp{
+  margin-left: 4%;
+  margin-bottom: 60%;
+}
+/* .inpDiv{
+  /* margin-bottom: -35%;; 
+  position: relative;
+  bottom: 62rem;
+} */
+#welcomeDiv{
+  display: none;
+  margin-left: 35%;
+}
